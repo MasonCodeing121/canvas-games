@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh; /* Use 100vh for full viewport height */
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.nav-setup {
+    height: 100vh;
+    width: 4%; /* Fixed width for navigation */
+    background-color: #054b7d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: purple; /* This sets the background color to purple */
+    margin-left: 42px;
+}
+
+.center {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%; /* Ensure it takes full height to allow vertical centering of its content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally within the .center div */
+    justify-content: flex-start; /* Centers items vertically within the .center div */
+}
+
+.icons {
+    width: 30px; /* This width seems to be intended for the icons themselves, not the container */
+    display: flex; /* Make the icons container a flex container */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally within their container */
+    gap: 10px; /* Add some gap between icons if desired */
+}
+
+.logo {
+    width: 50px;
+    margin-top: 10px;
+    flex-shrink: 2;
+    flex-grow: 1;
+}
+
+.icon {
+    width: 5px;
+    flex-shrink: 2;
+    flex-grow: 1;
+}
+
+#logop {
+    border-radius: 50%;
+    background-color: lightgrey;
+    height: 40px;
+    width: 40px;
+    border-color: white;
+    border: 1px solid;
+}
+.header {
+    min-width: 552px;
+    max-width: 880px;
+}
